@@ -1,0 +1,321 @@
+body {
+  background-color: #fcfcff;
+  font-family: "Instrument Sans";
+}
+
+#main-dashboard {
+  display: flex;
+}
+
+#main-nav-card {
+  width: 325px;
+  height: auto;
+  padding: 35px 10px 20px 20px;
+}
+
+#main-nav-logo {
+  font-weight: 700;
+  font-size: 50px;
+  padding-top: 15px;
+  color: #3c3c3c;
+}
+
+#main-nav-list {
+  padding-top: 100px;
+  text-align: right;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.nav-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: right;
+  padding: 20px 40px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.nav-button:hover {
+  background-color: rgb(233, 233, 233);
+  cursor: pointer;
+}
+
+#divider {
+  background-color: rgb(207, 207, 207);
+  margin-top: 100px;
+  height: 600px;
+  width: 2px;
+}
+
+#main-content {
+  margin-left: 30px;
+  margin-top: 60px;
+  width: 1220px;
+  height: 750px;
+  padding: 30px;
+}
+
+.hidden {
+  display: none;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+  font-family: "Instrument Sans";
+  visibility: hidden;
+  font-size: 13px;
+  width: 300px;
+  background-color: #2d2d2d;
+  color: #fff;
+  text-align: left;
+  border-radius: 15px;
+  padding: 20px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 100%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip strong {
+  font-size: 16px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 0.95;
+  transition-delay: 1s;
+}
+
+.black-button {
+  font-family: "Instrument Sans";
+  font-size: 14px;
+  font-weight: 600;
+  background-color: black;
+  color: #e6e6e6;
+  width: 210px;
+  height: 60px;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+}
+
+.black-button:hover {
+  background-color: #3c3c3c;
+  cursor: pointer;
+}
+
+#content-title,
+#social-post-text,
+#note-title {
+  font-family: "Instrument Sans";
+  outline: none;
+  border: none;
+  width: 700px;
+  height: 60px;
+  font-size: 50px;
+  padding-top: 75px;
+  padding-left: 35px;
+  color: #2d2d2d;
+  background-color: transparent;
+}
+
+#content-genre,
+#note-content {
+  font-family: "Instrument Sans";
+  outline: none;
+  border: none;
+  width: 700px;
+  height: 50px;
+  font-size: 30px;
+  padding-top: 25px;
+  padding-left: 35px;
+  color: #2d2d2d;
+  background-color: transparent;
+}
+
+#schedule-content-modifiers {
+  padding-top: 25px;
+  padding-left: 35px;
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.modifier-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.input-label {
+  font-family: "Instrument Sans";
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #2d2d2d;
+}
+
+.input-label.alt {
+  color: #007acc;
+}
+
+#platform-select,
+#social-platform-select {
+  font-family: "Instrument Sans";
+  font-size: 16px;
+  color: #2d2d2d;
+  background-color: white;
+  border: 1px solid #aaa;
+  border-radius: 30px;
+  padding: 10px 15px;
+  width: 180px;
+  outline: none;
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 12px;
+}
+
+#platform-select:hover {
+  border-color: #3c3c3c;
+}
+
+#platform-select:focus {
+  border-color: #007acc;
+  box-shadow: 0 0 4px rgba(0, 122, 204, 0.5);
+}
+
+#schedule-content-time,
+#schedule-content-day {
+  font-family: "Instrument Sans";
+  border: 1px solid #aaa;
+  border-radius: 30px;
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #2d2d2d;
+  background-color: white;
+  width: 180px;
+}
+
+#schedule-content-time:focus,
+#schedule-content-day:focus {
+  outline: none;
+  border-color: #3c3c3c;
+}
+
+#day-selector {
+  display: flex;
+  padding-top: 50px;
+}
+
+.day-container {
+  background-color: #eaeaea;
+  height: 250px;
+  width: 200px;
+  align-items: center;
+  padding: 20px;
+
+  margin: 10px;
+  border-radius: 15px;
+}
+
+.day-button-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 100%;
+}
+
+.edit-button {
+  font-family: "Instrument Sans";
+  outline: none;
+  border: none;
+  background-color: black;
+  color: #e6e6e6;
+  width: 100px;
+  height: 35px;
+  border-radius: 15px;
+}
+
+.edit-button:hover {
+  background-color: rgb(37, 37, 37);
+  cursor: pointer;
+}
+
+.delete-button {
+  font-family: "Instrument Sans";
+  outline: none;
+  border: none;
+  background-color: rgb(211, 47, 47);
+  color: #e6e6e6;
+  width: 100px;
+  height: 35px;
+  border-radius: 15px;
+}
+
+.delete-button:hover {
+  background-color: rgb(243, 91, 91);
+  cursor: pointer;
+}
+.day-title {
+  font-family: "Instrument Sans";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: 800;
+  color: #3c3c3c;
+}
+
+#bottom-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+#import-button {
+  font-family: "Instrument Sans";
+  outline: none;
+  border: none;
+  background-color: rgb(234, 234, 234);
+  color: #242424;
+  width: 300px;
+  height: 60px;
+  border-radius: 15px;
+}
+
+#import-button:hover {
+  background-color: rgb(210, 210, 210);
+  cursor: pointer;
+}
+
+#view-button {
+  font-family: "Instrument Sans";
+  outline: none;
+  border: none;
+  background-color: rgb(18, 18, 18);
+  color: #e8e8e8;
+  width: 300px;
+  height: 60px;
+  border-radius: 15px;
+}
+
+#view-button:hover {
+  background-color: rgb(47, 47, 47);
+  cursor: pointer;
+}
