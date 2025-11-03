@@ -1,4 +1,4 @@
-# Assignment 2 - Environment Setup, Course Project, and Sprint 1 Plan
+# Course Project - "Align"
 
 ### Overview
 
