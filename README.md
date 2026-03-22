@@ -1,15 +1,12 @@
-# Course Project - "Align"
+# CS361 Software Engineering I Final Project
 
-### Overview
+## Objective
+> Main objectie was to implement a single page application that will connect with differnet microservices. The entire course was designed with creating and working with microservices, and thus the final project was designed to have our main application utilize other microservices - created by our teammates.
 
-Edit for 10.13.2025
-> For this assignment, Assignment 2, we are tasked with setting up our 
-> environments on GitHub for future collaboration with a team and for overall
-> task organization. In this assignment, we were tasked at creating this repository
-> as well as develop user stories for our Main Program (which later on might become microservices)
+## Project Description
+> This project is called "Align"
+> Align is a content-creator organizing tool. Users can create a schedule to post to their audience of when certain events on their social feeds will happen. Users can plan their content and organize themselves.
 
- Edit for 11.3.2025
-> Changed language to JS for ease of development - especially when showing off the heuristic features
 
 
 
